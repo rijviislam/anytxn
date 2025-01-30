@@ -14,3 +14,74 @@
 .montserrat-font {
   font-family: var(--font-montserrat);
 }
+body {
+  background: #ffff;
+}
+.banner-container {
+  height: 620px;
+  background: radial-gradient(
+    59.82% 121.73% at -9.66% 130.31%,
+    #00e9ea 0%,
+    #1f80f0 52.08%,
+    #005bc4 100%
+  );
+}
+.legacy {
+  height: 530px;
+  background: radial-gradient(
+    24.45% 88.58% at 23.57% 2%,
+    #00e9ea 0%,
+    #1f80f0 52.08%,
+    #005bc4 100%
+  );
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.cta-button {
+  background: #ff7f50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blurred-shape {
+  position: absolute;
+  width: 300px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  filter: blur(10px);
+  transform: rotate(15deg);
+  top: 20%;
+  left: 30%;
+}
+
+.diagonal-divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 0 40%);
+  z-index: 1;
+}
