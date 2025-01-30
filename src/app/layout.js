@@ -1,6 +1,6 @@
 import { Inter, Montserrat } from "next/font/google";
+import Context from "../app/components/Context";
 import "./globals.css";
-
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${montserrat.variable} antialiased`}>
-        {children}
+     <Context>   {children}</Context>
       </body>
     </html>
   );

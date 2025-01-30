@@ -16,7 +16,7 @@ export default function Philosophy() {
       <div className="max-w-[1200px] mt-10">
         <Image src={PhilosophyImg} className="w-full" alt="Philosophy Image" />
       </div>
-      <div className="grid grid-cols-3 mt-10 gap-10  w-[1200px]">
+      <div className="grid grid-cols-3 mt-10 gap-20  max-w-[1200px]">
         <div className="bg-[#F8FCFF] max-w-[355px] px-8 py-5 flex items-start justify-center flex-col rounded-2xl ">
           <Image className=" object-contain " src={Share} alt="Finance" />
           <h1 className="montserrat-font text-2xl leading-[31px] font-semibold text-[#0b305b] my-5">
