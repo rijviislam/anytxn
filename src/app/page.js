@@ -1,3 +1,4 @@
+import Banner from "./components/Banner";
 import Companies from "./components/Companies";
 import Finance from "./components/Finance";
 import Footer from "./components/Footer";
@@ -9,6 +10,7 @@ import Trusted from "./components/Trusted";
 export default function Home() {
   return (
   <>
+  <Banner/>
   <Finance/>
   <Philosophy/>
   <Technology/>
