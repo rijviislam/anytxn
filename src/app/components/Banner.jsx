@@ -5,7 +5,7 @@ export default function Banner() {
   return (
     <div className=" overflow-x-hidden">
       {/* LEARGE BANNER START  */}
-      <div className="hidden lg:block  w-full h-screen ">
+      <div className="hidden lg:block  w-full max-h-screen ">
         <div className=" w-full flex-col flex justify-center items-center relative overflow-hidden  ">
           {/* <div className="  bg-transparent hidden">
             <Image src={Logo} alt="Logo" className="absolute z-50" />
