@@ -7,21 +7,21 @@ import FinanceMainImg from "../../assets/finance.png";
 
 export default function Finance() {
   return (
-    <div className="w-full bg-[#FFF] mx-auto flex items-center justify-center pt-[62px] flex-col">
-      <div className="max-w-[1200px] flex justify-between relative">
-        <div className="w-1/2">
-          <h1 className="text-base font-bold leading-[24px] montserrat-font text-[#1f80f0]">
+    <div className="w-full bg-[#FFF] mx-auto flex items-center justify-center  flex-col  ">
+      <div className="lg:max-w-[1200px] w-full flex justify-between relative  lg:flex-row lg:px-10 xl:px-0 px-0 gap-20 lg:gap-0 lg:items-start flex-col items-center">
+        <div className="lg:w-1/2">
+          <h1 className="text-base font-bold leading-[24px] montserrat-font text-[#1f80f0] px-10 lg:px-0">
             POWERING THE FUTURE OF FINANCE
           </h1>
-          <h2 className="text-[56px] font-semibold leading-[62px]  montserrat-font text-[#0b305b] pt-6">
+          <h2 className="text-[56px] font-semibold leading-[62px]  montserrat-font text-[#0b305b] pt-6 px-10 lg:px-0">
             Uncovering new ways to delight customers
           </h2>
-          <h6 className="font-bold text-base leading-[26px] text-[#164377] inter-font my-5">
+          <h6 className="font-bold text-base leading-[26px] text-[#164377] inter-font my-5 lg:block hidden">
             AnyTech is revolutionising financial technology by introducing
             innovative and real-time transaction account processing
             capabilities, specifically designed for retail financial services.
           </h6>
-          <p className="inter-font font-normal text-base leading-[26px] text-[#164377]">
+          <p className="inter-font font-normal text-base leading-[26px] text-[#164377] lg:block hidden">
             Our modern approach surpasses traditional banking and card
             processing systems, empowering you with the most advanced technology
             for lasting success.
@@ -45,12 +45,12 @@ export default function Finance() {
           />
           <div>
             <Image
-              className="w-[550px] h-[600px] object-cover  relative z-10 "
+              className="lg:w-[550px] md:w-[550px] w-[360px] h-[400px] lg:h-[600px] md:h-[600px] object-cover  relative z-10"
               src={FinanceImg}
               alt="Finance"
             />
             <Image
-              className="w-[426px] absolute h-[517px] object-contain shadow-2xl z-20 top-10 right-14"
+              className="lg:w-[426px] md:w-[426px] w-[317px] absolute h-[301px] lg:h-[517px] md:h-[517px] object-contain lg:shadow-2xl z-20 top-10 right-14 xs:right-5 "
               src={FinanceMainImg}
               alt="Finance"
             />
