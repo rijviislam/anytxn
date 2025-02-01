@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../../assets/logo-a.svg";
+import Logo from "../../../public/assets/logo-a.svg";
 export default function Footer() {
   return (
     <div className="flex flex-col">

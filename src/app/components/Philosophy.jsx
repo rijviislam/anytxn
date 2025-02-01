@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Cutting from "../../assets/cutting.svg";
-import PhilosophyImg from "../../assets/human-1.png";
-import philosophyImg2 from "../../assets/philosophy-img-2.png";
-import Share from "../../assets/share.svg";
-import Simplify from "../../assets/simplify.png";
+import Cutting from "../../../public/assets/cutting.svg";
+import PhilosophyImg from "../../../public/assets/human-1.png";
+import philosophyImg2 from "../../../public/assets/philosophy-img-2.png";
+import Share from "../../../public/assets/share.svg";
+import Simplify from "../../../public/assets/simplify.png";
 import PhilosophySlider from "./PhilosophySlider";
 
 export default function Philosophy() {

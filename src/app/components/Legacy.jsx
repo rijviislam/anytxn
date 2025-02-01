@@ -16,7 +16,7 @@ export default function Legacy() {
             the future
           </p>
           <button className="bg-[#FE8B53] px-10 py-3 rounded-md text-white font-semibold inter-font text-lg hover:bg-[#ff894e] transition">
-            Contact Us ›
+            Contact Us
           </button>
         </div>
 

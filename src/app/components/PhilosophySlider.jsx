@@ -1,18 +1,14 @@
-"use client"; // Ensure it's a Client Component
+"use client";
 
 import Image from "next/image";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Share from "../../assets/share.svg";
+import Share from "../../../public/assets/share.svg";
 
 export default function PhilosophySlider() {
   return (
     <div className="w-[420px] mt-10 px-10 sm:px-0">
-      <Swiper
-        className="mySwiper"
-        slidesPerView={1.3} // Show 1.3 slides at a time
-        spaceBetween={20} // Adjust space between slides
-      >
+      <Swiper className="mySwiper" slidesPerView={1.3} spaceBetween={20}>
         <SwiperSlide>
           <div className="bg-[#F8FCFF] max-w-[355px] p-6 flex items-start justify-center flex-col rounded-2xl ">
             <Image className=" object-contain " src={Share} alt="Finance" />

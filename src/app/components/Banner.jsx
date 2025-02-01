@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Bannerimg from "../../assets/banner-image.jpg";
-import Logo from "../../assets/logo-a.svg";
+import Bannerimg from "../../../public/assets/banner-image.jpg";
+import Logo from "../../../public/assets/logo-a.svg";
 export default function Banner() {
   return (
     <div className=" overflow-x-hidden">

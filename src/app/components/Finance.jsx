@@ -1,9 +1,9 @@
 import Image from "next/image";
-import F1 from "../../assets/finance-1.png";
-import F2 from "../../assets/finance-2.svg";
-import F3 from "../../assets/finance-3.png";
-import FinanceImg from "../../assets/finance-figure-svg1.svg";
-import FinanceMainImg from "../../assets/finance.png";
+import F3 from "../../../public/assets//finance-3.png";
+import F1 from "../../../public/assets/finance-1.png";
+import F2 from "../../../public/assets/finance-2.svg";
+import FinanceImg from "../../../public/assets/finance-figure-svg.png";
+import FinanceMainImg from "../../../public/assets/finance.png";
 
 export default function Finance() {
   return (

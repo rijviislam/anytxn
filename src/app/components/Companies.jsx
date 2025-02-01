@@ -1,19 +1,19 @@
 import Image from "next/image";
-import C1 from "../../assets/company-1.webp";
-import C10 from "../../assets/company-10.webp";
-import C11 from "../../assets/company-11.webp";
-import C12 from "../../assets/company-12.webp";
-import C13 from "../../assets/company-13.webp";
-import C14 from "../../assets/company-14.webp";
-import C15 from "../../assets/company-15.webp";
-import C2 from "../../assets/company-2.webp";
-import C3 from "../../assets/company-3.webp";
-import C4 from "../../assets/company-4.webp";
-import C5 from "../../assets/company-5.webp";
-import C6 from "../../assets/company-6.webp";
-import C7 from "../../assets/company-7.webp";
-import C9 from "../../assets/company-9.webp";
-import C8 from "../../assets/company8.webp";
+import C1 from "../../../public/assets/company-1.webp";
+import C10 from "../../../public/assets/company-10.webp";
+import C11 from "../../../public/assets/company-11.webp";
+import C12 from "../../../public/assets/company-12.webp";
+import C13 from "../../../public/assets/company-13.webp";
+import C14 from "../../../public/assets/company-14.webp";
+import C15 from "../../../public/assets/company-15.webp";
+import C2 from "../../../public/assets/company-2.webp";
+import C3 from "../../../public/assets/company-3.webp";
+import C4 from "../../../public/assets/company-4.webp";
+import C5 from "../../../public/assets/company-5.webp";
+import C6 from "../../../public/assets/company-6.webp";
+import C7 from "../../../public/assets/company-7.webp";
+import C9 from "../../../public/assets/company-9.webp";
+import C8 from "../../../public/assets/company8.webp";
 
 export default function Companies() {
   return (
