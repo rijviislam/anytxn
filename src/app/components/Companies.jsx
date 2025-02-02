@@ -17,7 +17,7 @@ import C8 from "../../../public/assets/company8.webp";
 
 export default function Companies() {
   return (
-    <div className="w-full mx-auto lg:flex md::flex items-center justify-center mt-[100px] sm:hidden  ">
+    <div className="w-full mx-auto lg:flex md::flex items-center justify-center mt-[100px] sm:hidden  pb-10">
       <div className="lg:max-w-[1200px] w-full grid md:grid-cols-3 lg:grid-cols-5 gap-10 place-items-center  md:px-10 ">
         <Image className=" object-contain " src={C1} alt="Finance" />
         <Image className=" object-contain " src={C2} alt="Finance" />
