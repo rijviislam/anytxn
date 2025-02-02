@@ -1,13 +1,17 @@
 export default function Legacy() {
   return (
     <div className="">
-      <div className="relative h-[500px] legacy overflow-hidden w-full ">
+      <div className="relative h-[500px] legacy overflow-hidden w-full md:w-full flex items-center justify-center">
         <div
-          className="absolute top-0 left-0 w-full h-full bg-white z-50"
+          className="absolute top-0 left-0 w-full h-full bg-white z-50 lg:block hidden"
           style={{ clipPath: "polygon(0 0, 100% 0, 100% 70%, 0 0%)" }}
         ></div>
+        <div
+          className="absolute top-0 left-0 w-full h-full bg-white z-50 block lg:hidden"
+          style={{ clipPath: "polygon(0 0, 100% 0, 100% 20%, 0 0%)" }}
+        ></div>
 
-        <div className="absolute top-[300px] left-[400px]  transform -translate-x-1/2 -translate-y-1/2 text-white text-start z-50">
+        <div className="absolute md:left-[400px] md:top-[300px] lg:top-[300px]  lg:left-[500px]  transform -translate-x-1/2 -translate-y-1/2 text-white text-start z-50 ">
           <h1 className="text-[56px] font-semibold leading-[62px] text-[#FFF] montserrat-font">
             Legacy no longer
           </h1>
@@ -15,7 +19,7 @@ export default function Legacy() {
             Talk to us to find out how we can transform your organisation for
             the future
           </p>
-          <button className="bg-[#FE8B53] px-10 py-3 rounded-md text-white font-semibold inter-font text-lg hover:bg-[#ff894e] transition">
+          <button className="bg-[#FE8B53] px-10 py-3 rounded-md text-white font-semibold inter-font text-lg hover:bg-[#ff894e] transition ">
             Contact Us
           </button>
         </div>

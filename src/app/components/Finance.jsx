@@ -2,7 +2,7 @@ import Image from "next/image";
 import F3 from "../../../public/assets//finance-3.png";
 import F1 from "../../../public/assets/finance-1.png";
 import F2 from "../../../public/assets/finance-2.svg";
-import FinanceImg from "../../../public/assets/finance-figure-svg.png";
+import FinanceImg from "../../../public/assets/finance-figure-svg1.svg";
 import FinanceMainImg from "../../../public/assets/finance.png";
 
 export default function Finance() {
@@ -44,8 +44,13 @@ export default function Finance() {
             alt="Finance"
           />
           <div>
+            {/* <Image
+              className="lg:w-[550px] md:w-[550px] w-[360px] h-[400px] lg:h-[600px] md:h-[600px] object-cover  relative z-10 border-2 border-black"
+              src={FinanceImg}
+              alt="Finance"
+            /> */}
             <Image
-              className="lg:w-[550px] md:w-[550px] w-[360px] h-[400px] lg:h-[600px] md:h-[600px] object-cover  relative z-10 "
+              className="lg:w-[550px]  h-[400px] lg:h-[600px] md:h-[600px] object-cover  relative z-10"
               src={FinanceImg}
               alt="Finance"
             />

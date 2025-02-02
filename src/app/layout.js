@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.variable} ${montserrat.variable} antialiased`}>
      <Context>   {children}</Context>
-     <Footer/>
+<Footer/>
       </body>
     </html>
   );
