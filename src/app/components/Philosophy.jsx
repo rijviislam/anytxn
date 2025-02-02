@@ -1,4 +1,8 @@
+"use client";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
+import { useEffect } from "react";
 import Cutting from "../../../public/assets/cutting.svg";
 import PhilosophyImg from "../../../public/assets/human-1.png";
 import philosophyImg2 from "../../../public/assets/philosophy-img-2.png";
@@ -7,8 +11,11 @@ import Simplify from "../../../public/assets/simplify.png";
 import PhilosophySlider from "./PhilosophySlider";
 
 export default function Philosophy() {
+  useEffect(() => {
+    AOS.init({});
+  });
   return (
-    <div className="flex items-center justify-center flex-col p-10  overflow-x-hidden hidden">
+    <div className="flex items-center justify-center flex-col p-10  overflow-x-hidden ">
       <h1 className="font-bold text-base text-[#1f80f0] montserrat-font leading-6 text-center ">
         OUR PHILOSOPHY
       </h1>
@@ -28,7 +35,11 @@ export default function Philosophy() {
         />
       </div>
       <div className="lg:flex justify-center  lg:flex-wrap hidden  mt-10 gap-16  max-w-[1200px]">
-        <div className="bg-[#F8FCFF] max-w-[355px] px-8 py-5 flex items-start justify-center flex-col rounded-2xl ">
+        <div
+          className="bg-[#F8FCFF] max-w-[355px] px-8 py-5 flex items-start justify-center flex-col rounded-2xl "
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <Image className=" object-contain " src={Share} alt="Finance" />
           <h1 className="montserrat-font text-2xl leading-[31px] font-semibold text-[#0b305b] my-5">
             Full-suite solutions
@@ -38,7 +49,11 @@ export default function Philosophy() {
             payment functions with our comprehensive suite of solutions.
           </p>
         </div>
-        <div className="bg-[#F8FCFF] w-[355px] px-8 py-5 flex items-start justify-center flex-col rounded-2xl ">
+        <div
+          className="bg-[#F8FCFF] w-[355px] px-8 py-5 flex items-start justify-center flex-col rounded-2xl "
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <Image className=" object-contain " src={Simplify} alt="Finance" />
           <h1 className="montserrat-font text-2xl leading-[31px] font-semibold text-[#0b305b] my-5">
             Simplify the complex
@@ -49,7 +64,11 @@ export default function Philosophy() {
             Data.
           </p>
         </div>
-        <div className="bg-[#F8FCFF] w-[355px] px-8 py-5 flex items-start justify-center flex-col rounded-2xl ">
+        <div
+          className="bg-[#F8FCFF] w-[355px] px-8 py-5 flex items-start justify-center flex-col rounded-2xl "
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <Image className=" object-contain " src={Cutting} alt="Finance" />
           <h1 className="montserrat-font text-2xl leading-[31px] font-semibold text-[#0b305b] my-5">
             Cutting-edge tech
@@ -60,7 +79,7 @@ export default function Philosophy() {
           </p>
         </div>
       </div>
-      <div className=" overflow-x-hidden mx-10 lg:hidden block border-2 border-black">
+      <div className=" overflow-x-hidden mx-10 lg:hidden block ">
         <PhilosophySlider />
       </div>
     </div>

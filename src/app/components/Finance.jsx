@@ -7,7 +7,7 @@ import FinanceMainImg from "../../../public/assets/finance.png";
 export default function Finance() {
   return (
     <div className="min-w-full mx-auto flex items-center justify-center  flex-col  mt-10 overflow-x-hidden ">
-      <div className="lg:max-w-[1200px] w-full flex justify-between relative  lg:flex-row lg:px-10 xl:px-0 px-0 gap-5 lg:gap-0 lg:items-start flex-col items-center ">
+      <div className="lg:max-w-[1200px] w-full flex justify-between relative  lg:flex-row lg:px-10 xl:px-0 px-0 gap-5 lg:gap-0 lg:items-start flex-col items-center lg:text-start text-center">
         <div className="lg:w-1/2 text-center lg:text-start">
           <h1 className="lg:text-base text-[12px] leading-[18px] font-bold lg:leading-[24px] montserrat-font text-[#1f80f0] px-10 lg:px-0 text-start lg:text-center">
             POWERING THE FUTURE OF FINANCE

@@ -31,10 +31,13 @@ export default function Banner() {
                 Reimagine financial services with AnyTech's open platform,
                 distributed <br /> banking solution that powers transformation
               </p>
-              <button className="bg-[#FE8B53] px-10 py-3 rounded-md text-white font-semibold inter-font text-lg hover:bg-[#ff894e] transition flex items-center gap-2">
-                Reach Out to Us
+
+              <button className="group bg-[#FE8B53] px-10 py-3 rounded-md text-white font-semibold inter-font text-lg hover:bg-[#ff894e] transition flex items-center gap-2">
+                <span className="transition-transform duration-200 group-hover:-translate-x-1">
+                  Reach Out to Us
+                </span>
                 <svg
-                  className="w-3 h-3"
+                  className="w-3 h-3 transition-transform duration-200 group-hover:translate-x-1"
                   viewBox="0 0 6 9"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"

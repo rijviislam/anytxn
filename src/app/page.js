@@ -16,7 +16,7 @@ export default function Home() {
           <div id="finance">
         <Finance />
       </div>
-        <div id="philosophy">
+        <div id="philosophy" >
         <Philosophy />
       </div>
         <div id="technology" >
