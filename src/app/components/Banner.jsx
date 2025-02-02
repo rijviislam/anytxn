@@ -1,24 +1,15 @@
+"use client";
 import Image from "next/image";
 import Bannerimg from "../../../public/assets/banner-image.jpg";
 import Logo from "../../../public/assets/logo-a.svg";
+import Navbar from "./Navbar";
 export default function Banner() {
   return (
     <div className=" overflow-x-hidden">
       {/* LEARGE BANNER START  */}
-      <div className="hidden lg:block  w-full max-h-screen ">
+      <div className="hidden lg:block  w-full max-h-screen  relative">
+        <Navbar />
         <div className=" w-full flex-col flex justify-center items-center relative overflow-hidden  ">
-          {/* <div className="  bg-transparent hidden">
-            <Image src={Logo} alt="Logo" className="absolute z-50" />
-            <div>
-              <ul>
-                <Link href="#">Solutions</Link>
-                <Link href="#">Solutions</Link>
-                <Link href="#">Solutions</Link>
-                <button>Eng</button>
-              </ul>
-            </div>
-          </div> */}
-
           <div className="banner-container h-screen w-full relative ">
             <div
               className="absolute top-0 left-0 w-full h-full bg-white z-30"
@@ -27,7 +18,7 @@ export default function Banner() {
               }}
             ></div>
           </div>
-          <div className="max-w-[1150px] min-w-[992px flex items-start justify-start absolute top-[130px] lg:left-10 xl:left-10 xxl:left-[130px] 3xl:left-[200px] 4xl:left-[200px] largest:left-[250px] z-50 ">
+          <div className="max-w-[1150px] min-w-[992px flex items-start justify-start absolute top-[130px] lg:left-10 xl:left-10 xxl:left-[130px] 3xl:left-[200px] 4xl:left-[200px] largest:left-[250px] z-40 ">
             <div className="">
               <h1 className="montserrat-font font-semibold  lg:text-[40px] xl:text-[80px] xl:leading-[92px] text-[#FFF]">
                 Embrace the <br />
@@ -37,14 +28,25 @@ export default function Banner() {
                 Reimagine financial services with AnyTech's open platform,
                 distributed <br /> banking solution that powers transformation
               </p>
-              <button className="bg-[#FE8B53] px-10 py-3 rounded-md text-white font-semibold inter-font text-lg hover:bg-[#ff894e] transition">
+              <button className="bg-[#FE8B53] px-10 py-3 rounded-md text-white font-semibold inter-font text-lg hover:bg-[#ff894e] transition flex items-center gap-2">
                 Reach Out to Us
+                <svg
+                  className="w-3 h-3"
+                  viewBox="0 0 6 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.25 4.89844L2.0625 8.08594C1.82812 8.32031 1.47656 8.32031 1.26562 8.08594L0.726562 7.57031C0.515625 7.33594 0.515625 6.98438 0.726562 6.77344L3 4.52344L0.726562 2.25C0.515625 2.03906 0.515625 1.6875 0.726562 1.45312L1.26562 0.914062C1.47656 0.703125 1.82812 0.703125 2.0625 0.914062L5.25 4.10156C5.46094 4.33594 5.46094 4.6875 5.25 4.89844Z"
+                    fill="white"
+                  />
+                </svg>
               </button>
             </div>
           </div>
           <div className="">
             <svg
-              className="hidden lg:block absolute h-full w-full object-cover inset-0 z-40"
+              className="hidden lg:block absolute -top-1 h-full w-full object-cover inset-0 z-30"
               width="1920"
               height="929"
               viewBox="0 0 1920 929"
@@ -698,7 +700,7 @@ export default function Banner() {
               clipPath: "polygon(200% 70%, 110% -1050%, 90% 1400%, -1% 100%)",
             }}
           ></div>
-          {/* HEADER  */}
+          {/* SMALL HEADER  */}
           <div className="bg-[#1F80F0] w-full h-[80px] fixed top-0 flex items-center justify-between px-10 z-50 overflow-x-hidden">
             <Image src={Logo} alt="logo" />
             <button>
