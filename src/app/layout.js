@@ -1,11 +1,13 @@
 import { Inter, Montserrat } from "next/font/google";
 import Context from "../app/components/Context";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import "./globals.css";
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // Specify weights
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 const montserrat = Montserrat({
@@ -22,11 +24,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${montserrat.variable} antialiased`}>
-        {/* <Navbar /> */}
-        <Context> {children}</Context>
+      <body className={`${inter.variable} ${montserrat.variable} antialiased overflow-x-hidden`}>
+        <Navbar /> 
+        <Context> {children} </Context>
         <Footer />
       </body>
     </html>
   );
 }
+

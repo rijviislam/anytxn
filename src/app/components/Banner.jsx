@@ -677,7 +677,7 @@ export default function Banner() {
           </div>
 
           <div
-            className="absolute -right-20 z-20 h-[100%] w-[100%] border-2 border-white"
+            className="absolute -right-20 z-20 h-[100%] w-[100%] "
             style={{
               clipPath: "polygon(30% 100%, 103% -90%, 170% -50%, 50% 140%)",
             }}

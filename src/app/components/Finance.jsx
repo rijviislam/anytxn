@@ -7,8 +7,8 @@ import FinanceMainImg from "../../../public/assets/finance.png";
 
 export default function Finance() {
   return (
-    <div className="w-full bg-[#FFF] mx-auto flex items-center justify-center  flex-col  mt-10">
-      <div className="lg:max-w-[1200px] w-full flex justify-between relative  lg:flex-row lg:px-10 xl:px-0 px-0 gap-5 lg:gap-0 lg:items-start flex-col items-center">
+    <div className="min-w-full mx-auto flex items-center justify-center  flex-col  mt-10 overflow-x-hidden">
+      <div className="lg:max-w-[1200px] w-full flex justify-between relative  lg:flex-row lg:px-10 xl:px-0 px-0 gap-5 lg:gap-0 lg:items-start flex-col items-center ">
         <div className="lg:w-1/2 text-center lg:text-start">
           <h1 className="text-base font-bold leading-[24px] montserrat-font text-[#1f80f0] px-10 lg:px-0">
             POWERING THE FUTURE OF FINANCE
@@ -29,26 +29,21 @@ export default function Finance() {
         </div>
         <div className=" relative ">
           <Image
-            className="absolute w-[115px] h-[114px] -right-0 top-20 object-contain shadow-2xl  z-50 "
+            className="absolute w-[115px] h-[114px] -right-8 top-20 object-contain shadow-2xl  z-30 "
             src={F1}
             alt="Finance"
           />
           <Image
-            className="absolute w-[73px] h-[73px] lg:left-7 lg:top-[150px] object-contain shadow-2xl z-50 sm:top-14 top-14 left-5  md:top-20 md:left-14"
+            className="absolute w-[73px] h-[73px] lg:left-16 lg:top-[100px] object-contain shadow-2xl z-30 sm:top-14 top-14 left-5  md:top-20 md:left-14 "
             src={F2}
             alt="Finance"
           />
           <Image
-            className="absolute w-[87px] h-[86px] lg:left-[140px] lg:top-[240px] object-contain shadow-2xl z-50  sm:top-[140px] top-[140px] left-20 sm:left-20 md:top-[220px] md:left-[180px] "
+            className="absolute w-[87px] h-[86px] lg:left-[140px] lg:top-[240px] object-contain shadow-2xl z-30  sm:top-[140px] top-[140px] left-20 sm:left-20 md:top-[220px] md:left-[180px] "
             src={F3}
             alt="Finance"
           />
           <div>
-            {/* <Image
-              className="lg:w-[550px] md:w-[550px] w-[360px] h-[400px] lg:h-[600px] md:h-[600px] object-cover  relative z-10 border-2 border-black"
-              src={FinanceImg}
-              alt="Finance"
-            /> */}
             <Image
               className="lg:w-[550px]  h-[400px] lg:h-[600px] md:h-[600px] object-cover  relative z-10"
               src={FinanceImg}

@@ -16,6 +16,8 @@
 }
 body {
   background: #ffff;
+  margin: 0;
+  padding: 0;
 }
 .banner-container {
   height: 620px;

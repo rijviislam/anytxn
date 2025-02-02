@@ -73,13 +73,13 @@ export default function App() {
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Thumbs]}
-        className="mySwiper my-10 rounded-[30px] max-w-[1130px]"
+        className="mySwiper my-10 rounded-[30px] max-w-[1030px] "
       >
         {slidesData.map((slide, index) => (
           <SwiperSlide key={index}>
             <button
               onClick={() => handleButtonClick(index)}
-              className={`font-semibold text-lg px-10 py-3 rounded-[30px] cursor-pointer ${
+              className={`font-semibold lg:block hidden text-lg px-10 py-3 rounded-[30px] cursor-pointer ${
                 activeIndex === index
                   ? "bg-blue-200 text-[#1f80f0]"
                   : "text-[#1f80f0]"
@@ -101,16 +101,16 @@ export default function App() {
           isAutoplay ? { delay: 3000, disableOnInteraction: false } : false
         }
         modules={[FreeMode, Navigation, Thumbs, Autoplay]}
-        className="mySwiper2 max-w-[1130px] rounded-[30px]"
+        className="mySwiper2 xl:max-w-[1200px] max-w-[800px] rounded-[30px]"
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
       >
         {slidesData.map((slide, index) => (
           <SwiperSlide
             key={index}
-            className="shadow-2xl bg-[#F8FCFF] rounded-[30px]"
+            className=" bg-[#F8FCFF] rounded-[30px] shadow-2xl"
           >
-            <div className="min-w-full flex items-start justify-center gap-10 p-10">
-              <div className="text-start max-w-[489px]">
+            <div className="min-w-full flex xl:flex-row flex-col xl:items-start xl:justify-center gap-10 p-10 items-center justify-center">
+              <div className="text-start  max-w-[489px] ">
                 <h1 className="text-base font-bold text-[#1f80f0] uppercase">
                   {slide.title}
                 </h1>

@@ -8,7 +8,7 @@ import PhilosophySlider from "./PhilosophySlider";
 
 export default function Philosophy() {
   return (
-    <div className="flex items-center justify-center flex-col p-10">
+    <div className="flex items-center justify-center flex-col p-10  overflow-x-hidden">
       <h1 className="font-bold text-base text-[#1f80f0] montserrat-font leading-6 text-center ">
         OUR PHILOSOPHY
       </h1>
