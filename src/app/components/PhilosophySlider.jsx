@@ -12,10 +12,10 @@ export default function PhilosophySlider() {
         <SwiperSlide>
           <div className="bg-[#F8FCFF] max-w-[355px] p-6 flex items-start justify-center flex-col rounded-2xl ">
             <Image className=" object-contain " src={Share} alt="Finance" />
-            <h1 className="montserrat-font text-2xl leading-[31px] font-semibold text-[#0b305b] my-5">
+            <h1 className="montserrat-font text-lg lg:text-2xl leading-[31px] font-semibold text-[#0b305b] my-5">
               Full-suite solutions
             </h1>
-            <p className="font-normal leading-[26px] text-base text-[#164377]">
+            <p className="font-normal leading-[26px] text-sm lg:text-base text-[#164377]">
               Experience the ease of integration across various banking and
               payment functions with our comprehensive suite of solutions.
             </p>
@@ -24,10 +24,10 @@ export default function PhilosophySlider() {
         <SwiperSlide>
           <div className="bg-[#F8FCFF] max-w-[355px] p-6 flex items-start justify-center flex-col rounded-2xl ">
             <Image className=" object-contain " src={Share} alt="Finance" />
-            <h1 className="montserrat-font text-2xl leading-[31px] font-semibold text-[#0b305b] my-5">
+            <h1 className="montserrat-font text-lg lg:text-2xl leading-[31px] font-semibold text-[#0b305b] my-5">
               Full-suite solutions
             </h1>
-            <p className="font-normal leading-[26px] text-base text-[#164377]">
+            <p className="font-normal leading-[26px] text-sm lg:text-base text-[#164377]">
               Experience the ease of integration across various banking and
               payment functions with our comprehensive suite of solutions.
             </p>
@@ -36,10 +36,10 @@ export default function PhilosophySlider() {
         <SwiperSlide>
           <div className="bg-[#F8FCFF] max-w-[355px] p-6 flex items-start justify-center flex-col rounded-2xl ">
             <Image className=" object-contain " src={Share} alt="Finance" />
-            <h1 className="montserrat-font text-2xl leading-[31px] font-semibold text-[#0b305b] my-5">
+            <h1 className="montserrat-font text-lg lg:text-2xl leading-[31px] font-semibold text-[#0b305b] my-5">
               Full-suite solutions
             </h1>
-            <p className="font-normal leading-[26px] text-base text-[#164377]">
+            <p className="font-normal leading-[26px] text-sm lg:text-base text-[#164377]">
               Experience the ease of integration across various banking and
               payment functions with our comprehensive suite of solutions.
             </p>
@@ -48,10 +48,10 @@ export default function PhilosophySlider() {
         <SwiperSlide>
           <div className="bg-[#F8FCFF] max-w-[355px] p-6 flex items-start justify-center flex-col rounded-2xl ">
             <Image className=" object-contain " src={Share} alt="Finance" />
-            <h1 className="montserrat-font text-2xl leading-[31px] font-semibold text-[#0b305b] my-5">
+            <h1 className="montserrat-font text-lg lg:text-2xl leading-[31px] font-semibold text-[#0b305b] my-5">
               Full-suite solutions
             </h1>
-            <p className="font-normal leading-[26px] text-base text-[#164377]">
+            <p className="font-normal leading-[26px] text-sm lg:text-base text-[#164377]">
               Experience the ease of integration across various banking and
               payment functions with our comprehensive suite of solutions.
             </p>

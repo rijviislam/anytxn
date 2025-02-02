@@ -2,17 +2,17 @@ import TabSlider from "./TabSlider";
 
 export default function Technology() {
   return (
-    <div className="text-center py-20 ">
-      <h1 className="font-bold text-base text-[#1f80f0] montserrat-font leading-6 text-center ">
+    <div className="text-center lg:py-20  overflow-x-hidden">
+      <h1 className="font-bold text-[12px] lg:text-base text-[#1f80f0] montserrat-font leading-6 text-center ">
         TECHNOLOGY BUILT FOR YOU
       </h1>
-      <p className="montserrat-font font-semibold text-[56px] leading-[62px] text-[0b305b] mt-3 text-center md:w-[550px] lg:w-full xs:w-full">
+      <p className="montserrat-font font-semibold text-[32px] lg:text-[56px] leading:-[38px] lg:leading-[62px] text-[#0b305b] mt-3 text-center md:w-[550px] lg:w-full xs:w-full xs:px-5">
         The future of finance
       </p>
       <div>
         <TabSlider />
       </div>
-      <div className="w-full h-[212px] opacity-15 ">
+      <div className="w-full lg:h-[212px] opacity-15 ">
         <svg
           className="max-h-[240px] md:my-sm my-lg w-full min-h-[60px]"
           preserveAspectRatio="xMidYMid slice"

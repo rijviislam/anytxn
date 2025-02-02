@@ -1,19 +1,18 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import F3 from "../../../public/assets//finance-3.png";
-import F1 from "../../../public/assets/finance-1.png";
-import F2 from "../../../public/assets/finance-2.svg";
 import FinanceImg from "../../../public/assets/finance-figure-svg1.svg";
 import FinanceMainImg from "../../../public/assets/finance.png";
 
 export default function Finance() {
   return (
-    <div className="min-w-full mx-auto flex items-center justify-center  flex-col  mt-10 overflow-x-hidden">
+    <div className="min-w-full mx-auto flex items-center justify-center  flex-col  mt-10 overflow-x-hidden ">
       <div className="lg:max-w-[1200px] w-full flex justify-between relative  lg:flex-row lg:px-10 xl:px-0 px-0 gap-5 lg:gap-0 lg:items-start flex-col items-center ">
         <div className="lg:w-1/2 text-center lg:text-start">
-          <h1 className="text-base font-bold leading-[24px] montserrat-font text-[#1f80f0] px-10 lg:px-0">
+          <h1 className="lg:text-base text-[12px] leading-[18px] font-bold lg:leading-[24px] montserrat-font text-[#1f80f0] px-10 lg:px-0 text-start lg:text-center">
             POWERING THE FUTURE OF FINANCE
           </h1>
-          <h2 className="text-[56px] font-semibold leading-[62px]  montserrat-font text-[#0b305b] pt-6 px-10 lg:px-0">
+          <h2 className="lg:text-[56px] text-[32px] font-semibold leading-[38px] lg:leading-[62px]  montserrat-font text-[#0b305b] pt-6 px-10 lg:px-0 lg:text-center text-start">
             Uncovering new ways to delight customers
           </h2>
           <h6 className="font-bold text-base leading-[26px] text-[#164377] inter-font my-5 lg:block hidden">
@@ -28,24 +27,42 @@ export default function Finance() {
           </p>
         </div>
         <div className=" relative ">
-          <Image
-            className="absolute w-[115px] h-[114px] -right-8 top-20 object-contain shadow-2xl  z-30 "
-            src={F1}
-            alt="Finance"
+          <motion.img
+            src="/assets/finance-2.svg"
+            alt="Icon"
+            className="absolute top-[20%] left-[12%] -translate-x-1/2 w-[min(73px,_18%)] rounded-full drop-shadow-2xl z-30"
+            animate={{ y: [0, -10, 0] }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              repeatType: "mirror",
+            }}
           />
-          <Image
-            className="absolute w-[73px] h-[73px] lg:left-16 lg:top-[100px] object-contain shadow-2xl z-30 sm:top-14 top-14 left-5  md:top-20 md:left-14 "
-            src={F2}
-            alt="Finance"
+          <motion.img
+            src="/assets/finance-1.svg"
+            alt="Icon"
+            className="absolute top-[10%] right-[-7%] translate-x-1/2 w-[min(115px,_30%)] rounded-full drop-shadow-2xl  z-30"
+            animate={{ y: [0, -10, 0] }}
+            transition={{
+              duration: 15,
+              repeat: Infinity,
+              repeatType: "mirror",
+            }}
           />
-          <Image
-            className="absolute w-[87px] h-[86px] lg:left-[140px] lg:top-[240px] object-contain shadow-2xl z-30  sm:top-[140px] top-[140px] left-20 sm:left-20 md:top-[220px] md:left-[180px] "
-            src={F3}
-            alt="Finance"
+          <motion.img
+            src="/assets/finance-3.png"
+            alt="Icon"
+            className="absolute top-[40%] left-[30%] w-[min(87px,_20%)] rounded-full drop-shadow-2xl  z-30"
+            animate={{ y: [0, -10, 0] }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              repeatType: "mirror",
+            }}
           />
           <div>
             <Image
-              className="lg:w-[550px]  h-[400px] lg:h-[600px] md:h-[600px] object-cover  relative z-10"
+              className="lg:w-[550px]  h-[400px] lg:h-[600px] md:h-[600px] object-cover  relative z-10 "
               src={FinanceImg}
               alt="Finance"
             />
@@ -56,7 +73,7 @@ export default function Finance() {
             />
           </div>
         </div>
-        <div className="lg:hidden md:fle flex-col px-5 md:px-0 max-w-[500px]  ml-5">
+        <div className="lg:hidden md:flex flex-col px-5 md:px-0 max-w-[500px]  ml-5 ">
           <h6 className="font-bold text-base leading-[26px] text-[#164377] inter-font my-5 ">
             AnyTech is revolutionising financial technology by introducing
             innovative and real-time transaction account processing
@@ -69,7 +86,7 @@ export default function Finance() {
           </p>
         </div>
       </div>
-      <div className="w-full h-[212px] opacity-15 ">
+      <div className="w-full lg:h-[212px] opacity-15 ">
         <svg
           className="max-h-[240px] md:my-sm my-lg w-full min-h-[60px]"
           preserveAspectRatio="xMidYMid slice"

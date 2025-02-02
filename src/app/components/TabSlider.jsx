@@ -73,7 +73,7 @@ export default function App() {
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Thumbs]}
-        className="mySwiper my-10 rounded-[30px] max-w-[1030px] "
+        className="mySwiper lg:my-10 my- rounded-[30px] max-w-[1030px] "
       >
         {slidesData.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -107,25 +107,25 @@ export default function App() {
         {slidesData.map((slide, index) => (
           <SwiperSlide
             key={index}
-            className=" bg-[#F8FCFF] rounded-[30px] shadow-2xl"
+            className=" bg-[#F8FCFF] rounded-[30px] shadow-2xl w-[340px] "
           >
-            <div className="min-w-full flex xl:flex-row flex-col xl:items-start xl:justify-center gap-10 p-10 items-center justify-center">
+            <div className="flex-col-reverse flex xl:flex-row lg:flex-row xl:items-start xl:justify-center gap-10 p-5 lg:p-10 items-center justify-center">
               <div className="text-start  max-w-[489px] ">
-                <h1 className="text-base font-bold text-[#1f80f0] uppercase">
+                <h1 className="text-[12px] lg:text-base font-bold text-[#1f80f0] uppercase">
                   {slide.title}
                 </h1>
-                <h2 className="text-[40px] font-semibold text-[#0b305b] my-5">
+                <h2 className="text-[24px] lg:text-[40px] font-semibold text-[#0b305b] my-5">
                   {slide.heading}
                 </h2>
-                <p className="text-[#164377] font-bold text-base leading-[26px]">
+                <p className="text-[#164377] font-bold text-[14px] lg:text-base leading-[26px]">
                   {slide.description1}
                 </p>
-                <p className="text-[#164377] font-medium text-base leading-[26px] mt-5">
+                <p className="text-[#164377] font-medium text-[14px] lg:text-base leading-[26px] mt-5">
                   {slide.description1}
                 </p>
               </div>
               <Image
-                className="w-[489px] h-[425px] rounded-3xl object-cover"
+                className="w-[489px] lg:h-[425px] h-[250px] rounded-3xl object-cover"
                 src={slide.image}
                 alt={slide.title}
                 width={489}

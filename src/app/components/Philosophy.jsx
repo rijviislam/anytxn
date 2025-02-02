@@ -8,11 +8,11 @@ import PhilosophySlider from "./PhilosophySlider";
 
 export default function Philosophy() {
   return (
-    <div className="flex items-center justify-center flex-col p-10  overflow-x-hidden">
+    <div className="flex items-center justify-center flex-col p-10  overflow-x-hidden hidden">
       <h1 className="font-bold text-base text-[#1f80f0] montserrat-font leading-6 text-center ">
         OUR PHILOSOPHY
       </h1>
-      <p className="montserrat-font font-semibold text-[56px] leading-[62px] text-[0b305b] mt-3 text-center md:w-[550px] lg:w-full xs:w-full">
+      <p className="montserrat-font font-semibold text-[32px] leading-[38px] lg:text-[56px] lg:leading-[62px] text-[#0b305b] mt-3 text-center md:w-[550px] lg:w-full xs:w-full">
         Human-centred innovation
       </p>
       <div className="max-w-[1200px] mt-10">
@@ -60,7 +60,7 @@ export default function Philosophy() {
           </p>
         </div>
       </div>
-      <div className=" overflow-x-hidden lg:hidden block">
+      <div className=" overflow-x-hidden mx-10 lg:hidden block border-2 border-black">
         <PhilosophySlider />
       </div>
     </div>

@@ -1,8 +1,8 @@
 export default function Legacy() {
   return (
     <div className="">
-      <div className="relative h-[500px] legacy overflow-hidden w-full md:w-full flex items-center justify-start border-none  mt-10">
-        <div className="pl-20  lg:ml-[10px] relative z-50 xs:pl-5">
+      <div className="relative h-[500px] legacy overflow-hidden w-full md:w-full flex items-center justify-start border-none mt-10 lg:mt-0">
+        <div className="pl-20  lg:ml-[10px] relative z-30 xs:pl-5">
           <h1 className="text-[56px] font-semibold leading-[62px] text-[#FFF] montserrat-font">
             Legacy no longer
           </h1>
@@ -26,12 +26,12 @@ export default function Legacy() {
           </button>
         </div>
         <div
-          className="absolute top-0 left-0 w-full h-full bg-white z-50 lg:block hidden"
-          style={{ clipPath: "polygon(0 0, 100% 0, 100% 70%, 0 0%)" }}
+          className="absolute -top-0 left-0 w-full h-full bg-white z-50 lg:block hidden"
+          style={{ clipPath: "polygon(0 -1%, 100% 0, 100% 50%, 0 0%)" }}
         ></div>
         <div
           className="absolute top-0 left-0 w-full h-full bg-white z-50 block lg:hidden"
-          style={{ clipPath: "polygon(0 0, 100% 0, 100% 20%, 0 0%)" }}
+          style={{ clipPath: "polygon(0 -1%, 100% 0, 100% 20%, 0 0%)" }}
         ></div>
 
         <div className="">

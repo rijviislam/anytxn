@@ -43,10 +43,11 @@ export default function Footer() {
             <Link href="#">
               <Image
                 className=" object-contain w-6 h-6 "
-                src={Msg}
+                src={Linkedin}
                 alt="Message"
               />
             </Link>
+
             <Link href="#">
               <Image
                 className=" object-contain w-6 h-6 "
@@ -57,7 +58,7 @@ export default function Footer() {
             <Link href="#">
               <Image
                 className=" object-contain w-6 h-6 "
-                src={Linkedin}
+                src={Msg}
                 alt="Message"
               />
             </Link>

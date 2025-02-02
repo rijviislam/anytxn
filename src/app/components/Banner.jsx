@@ -1,13 +1,16 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 import Bannerimg from "../../../public/assets/banner-image.jpg";
 import Logo from "../../../public/assets/logo-a.svg";
 import Navbar from "./Navbar";
 export default function Banner() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className=" overflow-x-hidden">
       {/* LEARGE BANNER START  */}
-      <div className="hidden lg:block  w-full max-h-screen  relative">
+      <div className="hidden lg:block  w-full max-h-screen relative ">
         <Navbar />
         <div className=" w-full flex-col flex justify-center items-center relative overflow-hidden  ">
           <div className="banner-container h-screen w-full relative ">
@@ -44,9 +47,9 @@ export default function Banner() {
               </button>
             </div>
           </div>
-          <div className="">
+          <div>
             <svg
-              className="hidden lg:block absolute -top-1 h-full w-full object-cover inset-0 z-30"
+              className="hidden lg:block absolute -top-1 h-full w-full object-cover inset-0 z-30 "
               width="1920"
               height="929"
               viewBox="0 0 1920 929"
@@ -692,31 +695,129 @@ export default function Banner() {
       </div>
       {/* LEARGE BANNER END  */}
       {/* TABLET OR SMALL BANNER  */}
-      <div className="flex flex-col lg:hidden  w-full h-screen relative overflow-x-hidden">
-        <div className="bg-[#005BC4] h-screen w-full relative flex items-center justify-center ">
+      <div className="flex flex-col lg:hidden  w-full min-h-[150vh] relative overflow-x-hidden ">
+        <div className="bg-[#005BC4] h-[110vh] w-full relative flex items-center justify-center ">
           <div
             className="absolute top-0 left-0 w-full h-full bg-white z-30"
             style={{
-              clipPath: "polygon(200% 70%, 110% -1050%, 90% 1400%, -1% 100%)",
+              clipPath: "polygon(350% 70%, 110% -50%, 90% 1400%, -1% 100%)",
             }}
           ></div>
           {/* SMALL HEADER  */}
-          <div className="bg-[#1F80F0] w-full h-[80px] fixed top-0 flex items-center justify-between px-10 z-50 overflow-x-hidden">
-            <Image src={Logo} alt="logo" />
-            <button>
-              <svg
-                className="fill-white"
-                width="18"
-                height="16"
-                viewBox="0 0 18 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 2C0 0.895431 0.895431 0 2 0H18V2H0Z"></path>
-                <rect y="7" width="18" height="2"></rect>
-                <path d="M0 14H18V16H2C0.89543 16 0 15.1046 0 14Z"></path>
-              </svg>
-            </button>
+          <div>
+            {/* Small Header (Fixed Top Navbar) */}
+            <div className="bg-[#1F80F0] w-full h-[80px] fixed top-0 flex items-center justify-between px-6 md:px-10 z-50">
+              <Image src={Logo} alt="logo" width={120} height={50} />
+
+              {/* Menu Button */}
+              <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
+                {isOpen ? (
+                  <svg
+                    className="fill-white"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M8.41401 6.99998L13.707 1.70695C14.098 1.31695 14.098 0.683006 13.707 0.293006C13.316 -0.0979941 12.684 -0.0979941 12.293 0.293006L7.00001 5.58597L1.70701 0.293006C1.31601 -0.0979941 0.684006 -0.0979941 0.293006 0.293006C-0.0979941 0.683006 -0.0979941 1.31695 0.293006 1.70695L5.58601 6.99998L0.293006 12.293C-0.0979941 12.683 -0.0979941 13.3169 0.293006 13.7069C0.488006 13.9019 0.744007 14 1.00001 14C1.25601 14 1.51201 13.9019 1.70701 13.7069L7.00001 8.41398L12.293 13.7069C12.488 13.9019 12.744 14 13 14C13.256 14 13.512 13.9019 13.707 13.7069C14.098 13.3169 14.098 12.683 13.707 12.293L8.41401 6.99998Z"></path>
+                  </svg>
+                ) : (
+                  <svg
+                    className="fill-white"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 18 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 2C0 0.895431 0.895431 0 2 0H18V2H0Z"></path>
+                    <rect y="7" width="18" height="2"></rect>
+                    <path d="M0 14H18V16H2C0.89543 16 0 15.1046 0 14Z"></path>
+                  </svg>
+                )}
+              </button>
+            </div>
+
+            {/* SMALL MENU   */}
+            <div
+              className={`fixed top-[80px] left-0 w-full h-3/5 bg-[#1B76E9] shadow-md transition-all duration-300 ease-in-out z-40 ${
+                isOpen ? "translate-x-0" : "-translate-x-full"
+              }`}
+            >
+              <ul className="flex flex-col items-center gap-8 p-4 ">
+                <Link
+                  href="#"
+                  className="text-[#FFF] text-sm font-medium  w-full inter-font flex justify-between"
+                >
+                  Solutions
+                  <svg
+                    className="ml-2 mt-1 fill-white"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M4.35156 5.27344C4.5625 5.48438 4.91406 5.48438 5.125 5.27344L8.3125 2.08594C8.54688 1.85156 8.54688 1.5 8.3125 1.28906L7.79688 0.75C7.5625 0.539062 7.21094 0.539062 7 0.75L4.72656 3.02344L2.47656 0.75C2.26562 0.539062 1.91406 0.539062 1.67969 0.75L1.16406 1.28906C0.929688 1.5 0.929688 1.85156 1.16406 2.08594L4.35156 5.27344Z"></path>
+                  </svg>
+                </Link>
+                <Link
+                  href="#"
+                  className="text-[#FFF] text-sm font-medium  w-full inter-font flex justify-between text-start"
+                >
+                  Services
+                </Link>
+                <Link
+                  href="#"
+                  className="text-[#FFF] text-sm font-medium  w-full inter-font flex justify-between text-start"
+                >
+                  ABout Us
+                </Link>
+              </ul>
+              <div className=" w-full flex-col flex items-center justify-center mt-5 px-10 gap-4">
+                <button className="uppercase text-white text-centerfont-medium inter-font text-sm flex items-center justify-center gap-2 py-3 px-4 border-[0.5px] border-[#c6c6c6] rounded-3xl">
+                  <svg
+                    width="12"
+                    height="13"
+                    viewBox="0 0 12 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.25 4.25H4.10156C4.45312 2.16406 5.25 0.6875 6.1875 0.6875C7.10156 0.6875 7.92188 2.16406 8.25 4.25ZM3.9375 6.5C3.9375 5.98438 3.96094 5.49219 4.00781 5H8.34375C8.39062 5.49219 8.41406 5.98438 8.41406 6.5C8.41406 7.03906 8.39062 7.53125 8.34375 8H4.00781C3.96094 7.53125 3.9375 7.03906 3.9375 6.5ZM11.5312 4.25H9C8.78906 2.9375 8.41406 1.74219 7.82812 0.945312C9.51562 1.4375 10.875 2.67969 11.5312 4.25ZM4.52344 0.945312C3.9375 1.74219 3.5625 2.9375 3.35156 4.25H0.820312C1.47656 2.67969 2.83594 1.4375 4.52344 0.945312ZM11.7891 5C11.9062 5.49219 11.9766 5.98438 11.9766 6.5C11.9766 7.03906 11.9062 7.53125 11.7891 8H9.09375C9.14062 7.50781 9.1875 7.01562 9.1875 6.5C9.1875 6.00781 9.14062 5.49219 9.09375 5H11.7891ZM3.1875 6.5C3.1875 7.01562 3.21094 7.50781 3.25781 8H0.5625C0.445312 7.53125 0.375 7.03906 0.375 6.5C0.375 5.98438 0.445312 5.49219 0.5625 5H3.25781C3.21094 5.49219 3.1875 6.00781 3.1875 6.5ZM4.10156 8.75H8.25C7.92188 10.8594 7.10156 12.3125 6.1875 12.3125C5.25 12.3125 4.45312 10.8594 4.10156 8.75ZM7.82812 12.0781C8.41406 11.2812 8.8125 10.0859 9 8.75H11.5312C10.875 10.3438 9.51562 11.5859 7.82812 12.0781ZM0.820312 8.75H3.35156C3.5625 10.0859 3.9375 11.2812 4.52344 12.0781C2.83594 11.5859 1.47656 10.3438 0.820312 8.75Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  English
+                  <svg
+                    className="rotate-0 transition-transform duration-300"
+                    width="9"
+                    height="5"
+                    viewBox="0 0 9 5"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.35156 4.77344L1.16406 1.58594C0.929688 1.35156 0.929688 1 1.16406 0.789062L1.67969 0.25C1.91406 0.0390625 2.26562 0.0390625 2.47656 0.25L4.72656 2.52344L7 0.25C7.21094 0.0390625 7.5625 0.0390625 7.79688 0.25L8.3125 0.789062C8.54688 1 8.54688 1.35156 8.3125 1.58594L5.125 4.77344C4.91406 4.98438 4.5625 4.98438 4.35156 4.77344Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </button>
+                <button className="border border-white inter-font text-base font-semibold w-full flex items-center justify-center text-white py-3">
+                  Contact Us
+                  <svg
+                    className="fill-white translate-x-3.5 transition-transform group-hover/highlight:translate-x-5"
+                    width="7"
+                    height="11"
+                    viewBox="0 0 7 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M6.67969 5.89844L2.13281 10.4688C1.89844 10.6797 1.54688 10.6797 1.33594 10.4688L0.796875 9.92969C0.585938 9.71875 0.585938 9.36719 0.796875 9.13281L4.40625 5.5L0.796875 1.89062C0.585938 1.65625 0.585938 1.30469 0.796875 1.09375L1.33594 0.554688C1.54688 0.34375 1.89844 0.34375 2.13281 0.554688L6.67969 5.125C6.89062 5.33594 6.89062 5.6875 6.67969 5.89844Z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
 
           {/* CONTENT AND SVG  */}
@@ -948,24 +1049,24 @@ export default function Banner() {
               </defs>
             </svg>
           </div>
-          <div className="absolute xs:top-[200px] max-w-[576px] xs:px-5 sm:px-5 ">
-            <h1 className="montserrat-font text-[56px] leading-[64px] font-semibold   text-[#FFF]">
+          <div className="absolute xs:top-[150px] min-w-full lg:max-w-[576px] xs:mx-10 sm:px-5  xs:px-5 ">
+            <h1 className="montserrat-font text-[56px] leading-[64px] font-semibold   text-[#FFF] ">
               Embrace the future of finance
             </h1>
-            <p className="montserrat-font text-base font-semibold  text-[#FFF] my-5">
+            <p className="montserrat-font text-base font-semibold  text-[#FFF] my-5 ">
               Reimagine financial services with AnyTech's open platform,
               distributed banking solution that powers transformation
             </p>
-            <button className="bg-[#FE8B53] sm:px-[120px] xs:px-[50px] md:px-[100px] py-3 rounded-md text-white font-semibold inter-font text-lg hover:bg-[#ff894e] transition">
+            <button className="bg-[#FE8B53]  py-3 rounded-md text-white font-semibold inter-font text-lg hover:bg-[#ff894e] transition xs:w-[300px] sm:w-[300px] md:w-[300px]">
               Reach Out to Us
             </button>
           </div>
         </div>
 
         <div
-          className="absolute bottom-0 z-20 h-[50%] w-full "
+          className="w-full h-[50vh] absolute bottom-[0px]  z-30"
           style={{
-            clipPath: "polygon(0 20%, 100% 0, 100% 80%, 0 100%)",
+            clipPath: "polygon(0 20%, 100% 0, 120% 80%, 0 100%)",
           }}
         >
           <Image
@@ -975,6 +1076,7 @@ export default function Banner() {
           />
         </div>
       </div>
+      {/* TABLET OR SMALL BANNER  END*/}
     </div>
   );
 }
