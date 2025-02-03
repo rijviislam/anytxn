@@ -15,7 +15,7 @@ export default function Philosophy() {
     AOS.init({});
   });
   return (
-    <div className="flex items-center justify-center flex-col p-10  overflow-x-hidden ">
+    <div className="flex items-center justify-center flex-col p-10  overflow-hidden ">
       <h1 className="font-bold text-base text-[#1f80f0] montserrat-font leading-6 text-center ">
         OUR PHILOSOPHY
       </h1>
