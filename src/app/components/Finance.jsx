@@ -7,12 +7,12 @@ import FinanceMainImg from "../../../public/assets/finance.png";
 export default function Finance() {
   return (
     <div className="min-w-full mx-auto flex items-center justify-center  flex-col  mt-10 overflow-x-hidden ">
-      <div className="lg:max-w-[1200px] w-full flex justify-between relative  lg:flex-row lg:px-10 xl:px-0 px-0 gap-5 lg:gap-0 lg:items-start flex-col items-center lg:text-start text-center">
+      <div className="lg:max-w-[1200px] w-full flex justify-between relative  lg:flex-row lg:px-10 xl:px-0 px-0 gap-5 lg:gap-0 lg:items-start flex-col items-center lg:text-start text-center ">
         <div className="lg:w-1/2 text-center lg:text-start">
-          <h1 className="lg:text-base text-[12px] leading-[18px] font-bold lg:leading-[24px] montserrat-font text-[#1f80f0] px-10 lg:px-0 text-start lg:text-center">
+          <h1 className="lg:text-base text-[12px] leading-[18px] font-bold lg:leading-[24px] montserrat-font text-[#1f80f0] px-10 lg:px-0 ">
             POWERING THE FUTURE OF FINANCE
           </h1>
-          <h2 className="lg:text-[56px] text-[32px] font-semibold leading-[38px] lg:leading-[62px]  montserrat-font text-[#0b305b] pt-6 px-10 lg:px-0 lg:text-center text-start">
+          <h2 className="lg:text-[56px] text-[32px] font-semibold leading-[38px] lg:leading-[62px]  montserrat-font text-[#0b305b] pt-6 px-10 lg:px-0 ">
             Uncovering new ways to delight customers
           </h2>
           <h6 className="font-bold text-base leading-[26px] text-[#164377] inter-font my-5 lg:block hidden">
